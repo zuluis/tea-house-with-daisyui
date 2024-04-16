@@ -15,7 +15,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start': '#FF8938',
+         'gradient-end': '#F00',
           }
         }
       }
@@ -26,19 +27,22 @@
         font-family: "Manrope", sans-serif;
     }
 </style>
-
 </head>
 <body class="manrope">
     <header class="container mx-auto">
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div class="my-20">
+        <div class="flex justify-between  items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-7xl font-extrabold">It is good <br>tea time at the <br> tea house.</h1>
             <p class="py-6">The and Botanical Solutions Supplier give Optimun Satisfaction To Your Taste Buds.</p>
-            <button class="bg-gradient-to-r from-red-400 via-red-500 to-red-600 rounded text-white ">Explore More</button>
+            <button class="btn  bg-gradient-to-r from-gradient-start to-gradient-end text-white ">
+              Explore More
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
           </div>
           <div>
-            <img src="images/banner.png" class="max-w-sm" />
+            <img src="images/banner.png" class="" />
             <div class=" -mt-16 flex items-center gap-4 drop-shadow-lg bg-white w-60 p-5">
               <i class="fa-solid fa-star text-3xl text-amber-400"></i>
               <div>
@@ -109,7 +113,7 @@
 
         </div>
       </section>
-      <section class="my-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24 flex flex-col lg:flex-row gap-12">
+      <section class="my-24 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24 flex flex-col lg:flex-row gap-12">
         <div class="flex items-center lg:pr-28">
           <div class="space-y-5">
         <h4 class="text-5xl font-extrabold text-white">Meet Our Super <br>Clients </h4>
@@ -183,9 +187,52 @@
       </section>
 
     </main>
-    <footer>
-        
-    </footer>
+   <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+    <div class="flex justify-between my-24">
+      <img src="images/cup.png" alt="">
+      <p>
+        <span>Ready to get started</span>
+        <button class=" bg-gradient-to-r from-gradient-start to-gradient-end rounded-r-sm">started</button>
+      </p>
+    </div>
+    <div class="footer">
+      <div>
+        <span class="footer-title">Quick Links</span>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Insurance</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </div>
+      <div>
+        <span class="footer-title">Our Service</span>
+        <a class="link link-hover">Life Insurance</a>
+        <a class="link link-hover"> Car Insurance</a>
+        <a class="link link-hover"> Health Insurance</a>
+        <a class="link link-hover"> House Insurance</a>
+      </div>
+      <div>
+        <span class="footer-title">Help</span>
+        <a class="link link-hover">Faqs</a>
+        <a class="link link-hover">Contact Us</a>
+      </div>
+      <div>
+        <span class="footer-title">Subscribe Newsletter</span>
+        <div class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Email Addrees</span>
+          </label>
+          <div class="relative">
+            <input type="text" placeholder="username@site.com" class=" py-4 bg-transparent border-b-2 border-black outline-nonepy">
+            <button class="btn text-white absolute top-0 right-0 rounded-full  bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <p>© 2027 UIDesign.to - All right reserved</p>
+    </div>
+   </footer>
+     
     
 </body>
 </html>
